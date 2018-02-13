@@ -1,8 +1,8 @@
 // Copyright (c) 2016, kulshekhar. All rights reserved. Use of this source code
 // is governed by a BSD-style license that can be found in the LICENSE file.
 
-import 'package:angular2/core.dart';
-import 'package:angular2/router.dart';
+import 'package:angular/core.dart';
+import 'package:angular_router/angular_router.dart';
 import 'package:lazy_loading_ng2/home.dart';
 import 'package:lazy_loading_ng2/mycomponent1.dart';
 import 'package:lazy_loading_ng2/mycomponent2.dart' deferred as c2;
