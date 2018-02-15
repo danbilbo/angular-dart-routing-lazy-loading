@@ -5,7 +5,8 @@ import 'package:angular/core.dart';
 import 'package:angular_router/angular_router.dart';
 import 'package:lazy_loading_ng2/home.dart';
 import 'package:lazy_loading_ng2/mycomponent1.dart';
-import 'package:lazy_loading_ng2/mycomponent2.dart' deferred as c2;
+// ignore: uri_has_not_been_generated
+import 'package:lazy_loading_ng2/mycomponent2.template.dart' deferred as c2t;
 
 @Component(
   selector: 'my-app',
@@ -32,4 +33,7 @@ import 'package:lazy_loading_ng2/mycomponent2.dart' deferred as c2;
 ])
 class AppComponent {}
 
-f() => c2.loadLibrary().then((_) => c2.C2Component);
+f() =>
+    c2t.loadLibrary()
+        .then((_) => c2t.initReflector())
+        .then((_) => c2t.C2Component);
